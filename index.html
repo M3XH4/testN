@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>DISPLAY NAME AND ADDRESS</span>
+        </div>
+        <div class="body">
+            <form method="post" id="user-form">
+                <label for="user-input-name">What Is Your Name?</label>
+                <input type="text" id="user-input-name" name="user-input-name" placeholder="Your Name" autocomplete="off" required>
+                <label for="user-input-address">Where Do You Live?</label>
+                <input type="text" id="user-input-address" name="user-input-address" placeholder="Your Address" autocomplete="off" required>
+                <button type="submit" id="submit-button">Click Here To Display Result</button>
+            </form>
+            <div class="output-container" id="outputContainer">
+                Waiting For User Input...
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

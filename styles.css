@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald&family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+.container {
+    background-color: white;
+    width: 60vw;
+    height: 80vh;
+    border: none;
+    border-radius: 20px;
+}
+.container .header {
+    background-color: burlywood;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; 
+    border-radius: 20px 20px 0px 0px;
+}
+.container .header span {
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: none;
+}
+.container .body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+#user-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#user-form label {
+    font-size: 1.6rem;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: none;
+    margin-bottom: 5px;
+}
+#user-form label:nth-child(3) {
+    margin-top: 5px;
+}
+#user-form input {
+    transition: all 300ms linear;
+    width: 50%;
+    border-radius: 20px;
+    padding: 8px;
+    border: 3px solid rgb(131, 106, 74);
+    background-color: burlywood;
+}
+#user-form input:focus {
+    padding: 11px;
+}
+#submit-button {
+    font-family: 'Oswald', sans-serif;  
+    transition: all 500ms linear;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    height: 40px;
+    width: 40%;
+    border: 3px solid rgb(131, 106, 74);
+    border-radius: 20px;
+    background-color: burlywood;
+    color: white;
+}
+#submit-button:is(:focus, :hover){
+    background-color: rgb(131, 106, 74);
+}
+.output-container { 
+    font-size: 1.2rem;
+    width: 80%;
+    border: 3px solid black;
+    border-radius: 10px;
+    align-items: center;
+    height: 25%;
+    padding: 10px;
+    background-color: burlywood;
+    margin: 20px;
+    overflow: auto;
+}
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 80vw;
+    }
+    .container .header span {
+        font-size: 1.3rem;
+    }
+}
